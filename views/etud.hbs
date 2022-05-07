@@ -1,0 +1,348 @@
+<div class="dashboard">
+	<div id="aside">
+		<ul class="list">
+			<li>
+				<img class="ensa" src="/image/ensa-khouribga-1.PNG"></img>
+			</li>
+			<li><a onclick="document.getElementById('id03').style.display='block'" style="width:auto;">demande de
+					stage</a></li>
+			<li onclick="document.getElementById('id04').style.display='block'" style="width:auto;">liste de stage</li>
+			<li onclick="document.getElementById('id05').style.display='block'" style="width:auto;">déposer un rapport
+			</li>
+		</ul>
+	</div>
+	<div class="droite">
+		<span onclick="history.back()" class="close" title="Close Modal">&times;</span>
+		<center>
+			<h2>Bienvenue</h2>
+			<p>
+			<h3> merci de nous avoir rejoindre!</h3>
+			</p>
+		</center>
+	</div>
+
+	</p>
+</div>
+
+<div id="id03" class="modal">
+
+	<div class="container">
+
+		<form class="well form-horizontal" action="/demande" method="post" id="contact_form">
+			<fieldset>
+				<span onclick="document.getElementById('id03').style.display='none'" class="close"
+					title="Close Modal">&times;</span>
+
+
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Nom</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="firstname" placeholder="First Name" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Prenom</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="lastname" placeholder="Last Name" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">E-Mail</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+							<input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">tel</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+							<input name="phone" placeholder="(+21).." class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Address</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+							<input name="address" placeholder="Address" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Select Basic -->
+
+
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">sujet</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+							<input name="sujet" placeholder="sujet.." class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">entrepise</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+							<input name="entrepise" placeholder="entrepise" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Text area -->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label"> lettre de motivation</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+							<textarea class="form-control" name="comment" placeholder="lettre.."></textarea>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- Button -->
+				<div class="form-group">
+					<label class="col-md-4 control-label"></label>
+					<div class="col-md-4">
+						<button type="submit" class="btn btn-warning">envoyer <span
+								class="glyphicon glyphicon-send"></span></button>
+					</div>
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
+</div><!-- /.container -->
+
+<div id="id04" class="modal">
+	<div>
+		<span onclick="history.back()" class="close" title="Close Modal">&times;</span>
+	</div>
+
+
+	<div class="liste">
+
+		<div class="listeic">
+			<img src="http://gravatar.com/avatar/7124bc62949227ac21a52e9533e6d478?s=80" class="listeRes" />
+			<div class="listeBilgi">
+				<h3>entrepise_1</h3>L'informatique et l'intelligence artificielle
+			</div>
+			<div class="islem">
+				<img class="sil" src="http://icons.iconarchive.com/icons/dryicons/simplistica/16/delete-icon.png" />
+
+			</div>
+			<div class="sil"></div>
+		</div>
+
+		<div class="listeic">
+			<img src="http://gravatar.com/avatar/7124bc62949227ac21a52e9533e6d478?s=80" class="listeRes" />
+			<div class="listeBilgi">
+				<h3>entrepise_2</h3>Analyse des réseaux informatique
+			</div>
+			<div class="islem">
+				<img class="sil" src="http://icons.iconarchive.com/icons/dryicons/simplistica/16/delete-icon.png" />
+
+			</div>
+			<div class="sil"></div>
+		</div>
+
+		<div class="listeic">
+			<img src="http://gravatar.com/avatar/7124bc62949227ac21a52e9533e6d478?s=80" class="listeRes" />
+			<div class="listeBilgi">
+				<h3>entrepise_3</h3>site_web (full stack)
+			</div>
+			<div class="islem">
+				<img class="sil" src="http://icons.iconarchive.com/icons/dryicons/simplistica/16/delete-icon.png" />
+
+			</div>
+			<div class="sil"></div>
+		</div>
+
+		<div class="listeic">
+			<img src="http://gravatar.com/avatar/7124bc62949227ac21a52e9533e6d478?s=80" class="listeRes" />
+			<div class="listeBilgi">
+				<h3>entrepise_4</h3>recherche opérationnelle
+			</div>
+			<div class="islem">
+				<img class="sil" src="http://icons.iconarchive.com/icons/dryicons/simplistica/16/delete-icon.png" />
+
+			</div>
+			<div class="sil"></div>
+		</div>
+
+	</div>
+</div>
+<div id="id05" class="modal">
+	<style>
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		body {
+			color: #999;
+			background-color: #eee;
+			font-family: sans-serif;
+			font-size: 100%;
+		}
+
+		form {
+			width: 80%;
+			height: 100%;
+			margin: 1rem auto;
+		}
+
+		input[type=text] {
+			background-color: transparent;
+			width: 100%;
+			font-size: 80%;
+			text-align: center;
+			/*text-transform: uppercase;*/
+
+			padding: 1rem 2rem;
+			border: 0;
+		}
+
+		label.file {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 80%;
+			text-align: center;
+			text-transform: uppercase;
+			border: 2px dashed #ccc;
+			margin: 3rem 0;
+			padding: 3rem;
+		}
+
+		label.file:hover {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+
+		label.file:active,
+		label.file.focus {
+			border-color: #09f;
+		}
+
+		input[type=file] {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			outline: 0;
+			border: 1px solid red;
+		}
+
+		button {
+			color: #eee;
+			background-color: #666;
+			padding: 1rem 2rem;
+			border: 0;
+			outline: none;
+		}
+
+		button:hover,
+		button:focus {
+			background-color: #333;
+		}
+
+		button:active {
+			color: #fff;
+			background-color: #000;
+		}
+
+		.sml {
+			display: inline-block;
+			color: #eee;
+			background-color: rgba(0, 200, 0, 0.67);
+			border-radius: 1rem;
+			font-size: smaller;
+			margin: 1rem 0 0 0;
+			padding: 0.67rem 1rem;
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			$('input[type=file]').change(function () {
+				//console.log(this.files);
+				var f = this.files;
+				var el = $(this).parent();
+				if (f.length > 1) {
+					console.log(this.files, 1);
+					el.text('Sorry, multiple files are not allowed');
+					return;
+				}
+				// el.removeClass('focus');
+				el.html(f[0].name + '<br>' +
+					'<span class="sml">' +
+					'type: ' + f[0].type + ', ' +
+					Math.round(f[0].size / 1024) + ' KB</span>');
+			});
+
+			$('input[type=file]').on('focus', function () {
+				$(this).parent().addClass('focus');
+			});
+
+			$('input[type=file]').on('blur', function () {
+				$(this).parent().removeClass('focus');
+			});
+
+		});
+	</script>
+	<form method="post" action="/upload">
+		<span onclick="document.getElementById('id05').style.display='none'" class="close"
+			title="Close Modal">&times;</span>
+		<label class="file">
+			Drop a file or click to select one
+			<input type="file" multiple>
+			<!-- use multiple, even if it’s not allowed, to be able to show an info text -->
+		</label>
+		<button type="submit" style="display: block; margin: 0 auto;">Upload</button>
+	</form>
+
+</div>

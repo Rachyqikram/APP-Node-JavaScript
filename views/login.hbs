@@ -1,0 +1,100 @@
+<div style="text-align: center;">
+    <h2>Gestion des stages </h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Se connecter </button>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">créer um compte
+    </button>
+</div>
+
+<div id="id01" class="modal">
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="/image/ENSA.PNG" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="price" required>
+            <label class="wrapper" for="states">role </label>
+            <div>
+                <select id="dd" style="display: block;">
+                    <option value="etudiant">étudiant </option>
+                    <option value="responsable">responsable </option>
+                    <option value="jury">Jury</option>
+                </select>
+            </div>
+
+            <button type="submit">Login</button>
+            {{!-- <label>
+                <input type="checkbox" checked="checked" name="remember"> ou se connecter avec
+                <a href="/auth/google" class="btn red darken-1">
+                    <i class="fab fa-google left"></i> Log In With Google
+                </a>
+            </label> --}}
+
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#"> Forgot password?</a></span>
+        </div>
+    </form>
+</div>
+
+<div id="id02" class="modal">
+    <form class="modal-content animate" action="/register" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="/image/ENSA.PNG" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="psw"><b>Mot de pass</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <label for="psw"><b>confirmer le Mot de pass</b></label>
+            <input type="password" placeholder="Enter Password" name="passwordcon" required>
+
+
+            <button type="submit">s'incrire</button>
+        </div>
+    </form>
+</div>
+
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "block";
+        }
+    }
+
+    const form = document.querySelector('form');
+    const select = document.getElementById('dd');
+    form.onsubmit = (e) => {
+        e.preventDefault();
+        const value = select.value;
+
+        if (value === 'etudiant') {
+            document.location = '/etudiant'
+        } else if (value === 'responsable') {
+            document.location = '/responsable'
+        } else if (value === 'jury') {
+            document.location = '/jury'
+        }
+    }
+</script>
